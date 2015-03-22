@@ -41,3 +41,16 @@ C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem.csproj.Generate
 C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\AvalonControlsLibrary.dll
 C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\AvalonControlsLibrary.pdb
 C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\AvalonControlsLibrary.xml
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.exe
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.pdb
+E:\Repositories\ASystem\ASystem\bin\Debug\ASystem.exe
+E:\Repositories\ASystem\ASystem\bin\Debug\ASystem.pdb
+E:\Repositories\ASystem\ASystem\obj\Debug\MainWindow.baml
+E:\Repositories\ASystem\ASystem\obj\Debug\MainWindow.g.cs
+E:\Repositories\ASystem\ASystem\obj\Debug\App.g.cs
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem_MarkupCompile.cache
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.g.resources
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.Properties.Resources.resources
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.csproj.GenerateResource.Cache
+E:\Repositories\ASystem\ASystem\bin\Debug\MySql.Data.dll
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.csprojResolveAssemblyReference.cache

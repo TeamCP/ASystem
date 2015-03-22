@@ -6,10 +6,12 @@ using System.Drawing;
 using WinForms = System.Windows.Forms;
 using System.Windows.Media;
 using AC.AvalonControlsLibrary.Controls;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace ASystem
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window 
     {
         private ContextMenu _trayMenu { get; set; }
         private WinForms.NotifyIcon _trayIcon { get; set; }
@@ -231,9 +233,35 @@ namespace ASystem
             MyTabControl.SelectedIndex = 2;
         }
 
-        private void Btn_CreateEvent_OnClick(object sender, RoutedEventArgs e)
+        private void Btn_CreateEvent_Click(object sender, RoutedEventArgs e)
         {
             MyTabControl.SelectedIndex = 3;
+        }      
+
+        private void Btn_AddEvent_Click(object sender, RoutedEventArgs e)
+        {
+            int importance = 0;
+            if (Cb_MinPriority.IsChecked == true) importance = 1;
+            if (Cb_MidPriority.IsChecked == true) importance = 2;
+            if (Cb_MaxPriority.IsChecked == true) importance = 3;
+
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>TIME PICKER THERE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+            // Сюда нужно читать данные из таймпикера в поля для времени.
+            int hour = 12;
+            int minute = 0;
+
+            DateTime DT = new DateTime(_date.Year, _date.Month, _date.Day, hour, minute, 0);
+
+            // Тут будет метод возвращающий массив с ID выбранных в листбоксе юзеров. 
+            int[] id_array = { 1, 2 };
+
+            foreach (int id in id_array)
+            {
+                if (DB.Exception_number == 0) DB.AddNewEvent(id, Tb_TextEvent.Text, Tb_PlaceEvent.Text, DT, importance);                
+            }
+
+            if (DB.Exception_number == 0) MessageBox.Show(String.Format("Событиt успешно добавлено."));           
+
         }
     }
 }
