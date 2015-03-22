@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<head>
+  <event number="1">
+    <timeStart>12:00</timeStart>
+    <eventText>Совещание по основам опастности жизнедеятельности приуроченное дню сятого бобра</eventText>
+    <eventPlace>деканат</eventPlace>
+    <priority>1</priority>
+  </event>
+  <event number="2">
+    <timeStart>13:00</timeStart>
+    <eventText>Совещание по основам опастности жизнедеятельности приуроченное дню сятого бобра</eventText>
+    <eventPlace>деканат</eventPlace>
+    <priority>1</priority>
+  </event>
+  <event number="3">
+    <timeStart>14:00</timeStart>
+    <eventText>Совещание по основам опастности жизнедеятельности приуроченное дню сятого бобра</eventText>
+    <eventPlace>деканат</eventPlace>
+    <priority>1</priority>
+  </event>
+  <event number="4">
+    <timeStart>15:00</timeStart>
+    <eventText>Совещание по основам опастности жизнедеятельности приуроченное дню сятого бобра</eventText>
+    <eventPlace>деканат</eventPlace>
+    <priority>1</priority>
+  </event>
+
+</head>

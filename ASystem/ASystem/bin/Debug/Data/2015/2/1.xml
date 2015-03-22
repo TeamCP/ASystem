@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<head>
+  <event number="1">
+    <timeStart>12:00</timeStart>
+    <eventText>Совещание</eventText>
+    <eventPlace>деканат</eventPlace>
+    <priority>2</priority>
+  </event>
+  <event number="2">
+    <timeStart>16:00</timeStart>
+    <eventText>Забрать журнал</eventText>
+    <eventPlace>202/2</eventPlace>
+    <priority>3</priority>
+  </event>
+  <event number="3">
+    <timeStart>17:00</timeStart>
+    <eventText>Встреча</eventText>
+    <eventPlace>519/2</eventPlace>
+    <priority>1</priority>
+  </event>
+  <event number="4">
+    <timeStart>17:30</timeStart>
+    <eventText>Отдать отчет</eventText>
+    <eventPlace>202/2</eventPlace>
+    <priority>3</priority>
+  </event>
+</head>

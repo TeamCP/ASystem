@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<head>
+  <event number="1">
+    <timeStart>12:00</timeStart>
+    <eventText>Совещание</eventText>
+    <eventPlace>деканат</eventPlace>
+    <priority>1</priority>
+  </event>
+</head>

@@ -1,0 +1,43 @@
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\bin\Debug\ASystem.exe.config
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\bin\Debug\ASystem.exe
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\bin\Debug\ASystem.pdb
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\MainWindow.baml
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\MainWindow.g.cs
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\App.g.cs
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\ASystem_MarkupCompile.cache
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\ASystem.g.resources
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\ASystem.Properties.Resources.resources
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\ASystem.csproj.GenerateResource.Cache
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\ASystem.exe
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\ASystem.pdb
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\bin\Debug\ASystem.exe.config
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\ASystem.exe
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\ASystem.pdb
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\bin\Debug\ASystem.exe
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\bin\Debug\ASystem.pdb
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\ASystem.csprojResolveAssemblyReference.cache
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\MainWindow.baml
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\MainWindow.g.cs
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\App.g.cs
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\ASystem_MarkupCompile.cache
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\ASystem.g.resources
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\ASystem.Properties.Resources.resources
+D:\Гланая учебная\Семестр 4\Командная разработка\Бекапы\ASystem\ASystem\obj\Debug\ASystem.csproj.GenerateResource.Cache
+C:\Users\zzz\Documents\Visual Studio 2013\Projects\[Семестр 4]\Командная разработка\ASystem\ASystem\obj\Debug\ASystem.csprojResolveAssemblyReference.cache
+E:\Repositories\ASystem\ASystem\bin\Debug\ASystem.exe.config
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\ASystem.exe.config
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem.exe
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem.pdb
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\ASystem.exe
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\ASystem.pdb
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem.csprojResolveAssemblyReference.cache
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\MainWindow.baml
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\MainWindow.g.cs
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\App.g.cs
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem_MarkupCompile.cache
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem.g.resources
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem.Properties.Resources.resources
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\obj\Debug\ASystem.csproj.GenerateResource.Cache
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\AvalonControlsLibrary.dll
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\AvalonControlsLibrary.pdb
+C:\Users\zzz\Documents\ASystem\ASystem\ASystem\bin\Debug\AvalonControlsLibrary.xml
