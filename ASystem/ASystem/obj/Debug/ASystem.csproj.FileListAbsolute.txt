@@ -54,3 +54,29 @@ E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.Properties.Resources.resources
 E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.csproj.GenerateResource.Cache
 E:\Repositories\ASystem\ASystem\bin\Debug\MySql.Data.dll
 E:\Repositories\ASystem\ASystem\obj\Debug\ASystem.csprojResolveAssemblyReference.cache
+D:\Гланая учебная\ASystem\ASystem\bin\Debug\ASystem.exe.config
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem.exe
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem.pdb
+D:\Гланая учебная\ASystem\ASystem\bin\Debug\ASystem.exe
+D:\Гланая учебная\ASystem\ASystem\bin\Debug\ASystem.pdb
+D:\Гланая учебная\ASystem\ASystem\bin\Debug\MySql.Data.dll
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\MainWindow.baml
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\MainWindow.g.cs
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\App.g.cs
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem_MarkupCompile.cache
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem.g.resources
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem.Properties.Resources.resources
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem.csproj.GenerateResource.Cache
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem_MarkupCompile.lref
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\Register.baml
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\Register.g.cs
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\OfflineRegister.baml
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\OfflineRegister.g.cs
+D:\Гланая учебная\ASystem\ASystem\obj\Debug\ASystem.csprojResolveAssemblyReference.cache
+E:\Repositories\ASystem\ASystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Repositories\ASystem\ASystem\obj\Debug\ASystem_MarkupCompile.lref
+E:\Repositories\ASystem\ASystem\obj\Debug\NoConnectionWindow.baml
+E:\Repositories\ASystem\ASystem\obj\Debug\LoginWindow.baml
+E:\Repositories\ASystem\ASystem\obj\Debug\NoConnectionWindow.g.cs
+E:\Repositories\ASystem\ASystem\obj\Debug\LoginWindow.g.cs

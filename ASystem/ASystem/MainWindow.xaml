@@ -3,13 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local=" http://schemas.AvalonControls/AvalonControlsLibrary/Controls"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ASystem.MainWindow"
-    
-        
-    
-        Height="567" Width="746" ResizeMode="NoResize" ShowInTaskbar="True" WindowStyle="None" AllowsTransparency="True" BorderThickness="1" BorderBrush="Gray">
-
-    
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:local1="clr-namespace:ASystem" mc:Ignorable="d" x:Class="ASystem.MainWindow" 
+        Height="567" Width="746" ResizeMode="NoResize" ShowInTaskbar="True" WindowStyle="None" AllowsTransparency="True" BorderThickness="1" BorderBrush="Gray" Icon="myIcon.ico" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
 
@@ -127,12 +122,13 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-        </Style> <!--Не используется-->
+        </Style>
+        <!--Не используется-->
 
         <Style TargetType="{x:Type Button}" x:Key="Day_btn">
 
             <EventSetter Event="ButtonBase.Click" Handler="Btn_Day_OnClick"/>
-            <Setter Property="FontSize" Value="13"></Setter>
+            <Setter Property="FontSize" Value="13"/>
 
             <Setter Property="Template">
                 <Setter.Value>
@@ -160,15 +156,14 @@
         </Style>
 
         <Style TargetType="{x:Type Button}" x:Key="EmptyDay_btn">
-            <Setter Property="Focusable" Value="False"></Setter>
+            <Setter Property="Focusable" Value="False"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border                            
         					x:Name="Border"  
         					Margin="2"
-                            Background="#CCDCDCDD">
-                        </Border>
+        					Background="#CCDCDCDD"/>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -183,8 +178,8 @@
         </Style>
 
         <Style TargetType="{x:Type Button}" x:Key="Arrows_btn">
-            <Setter Property="FontSize" Value="27"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="27"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
 
             <Setter Property="Template">
                 <Setter.Value>
@@ -211,11 +206,11 @@
         </Style>
 
         <Style TargetType="{x:Type Label}" x:Key="MonthAndYear_lbl">
-            <Setter Property="FontSize" Value="35"></Setter>
-            <Setter Property="Foreground" Value="#FF0062AD"></Setter>
-            <Setter Property="Content" Value="Январь 2015"></Setter>
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="Foreground" Value="#FF0062AD"/>
+            <Setter Property="Content" Value="Январь 2015"/>
 
-            <EventSetter Event="MouseDoubleClick" Handler="Lbl_MonthAndYear_OnMouseDoubleClick"></EventSetter>
+            <EventSetter Event="Control.MouseDoubleClick" Handler="Lbl_MonthAndYear_OnMouseDoubleClick"/>
 
             <Setter Property="Template">
                 <Setter.Value>
@@ -236,20 +231,20 @@
         </Style>
 
         <Style TargetType="{x:Type Button}" x:Key="Settings_btn">
-            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
 
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border                            
         					x:Name="Border">
-                            <ContentPresenter x:Name="ContentPr"></ContentPresenter>
+                            <ContentPresenter x:Name="ContentPr"/>
                         </Border>
 
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="true">
-                                <Setter TargetName="ContentPr" Property="TextBlock.Foreground" Value="#FF0062AD"></Setter>
+                                <Setter TargetName="ContentPr" Property="TextBlock.Foreground" Value="#FF0062AD"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
 
@@ -259,30 +254,30 @@
         </Style>
 
         <Style TargetType="{x:Type Label}" x:Key="Title_lbl">
-            <Setter Property="FontSize" Value="35"></Setter>
-            <Setter Property="Foreground" Value="#FF0062AD"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="Foreground" Value="#FF0062AD"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
 
         <Style TargetType="{x:Type Label}" x:Key="DoingActive_lbl">
-            <Setter Property="BorderThickness" Value="2"></Setter>
-            <Setter Property="BorderBrush" Value="#FF0062AD"></Setter>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#FF0062AD"/>
         </Style>
 
         <Style TargetType="{x:Type Label}" x:Key="Doing_lbl">
-            <Setter Property="FontSize" Value="25"></Setter>
-            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="10"/>
 
-            <EventSetter Event="MouseDoubleClick" Handler="Doing_lbl_OnMouseDoubleClick"></EventSetter>
-            
+            <EventSetter Event="Control.MouseDoubleClick" Handler="Doing_lbl_OnMouseDoubleClick"/>
+
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Label}">
 
-                        <Label x:Name="MyLabel">                          
+                        <Label x:Name="MyLabel">
                             <ContentPresenter>
                                 <ContentPresenter.Content>
-                                    <TextBlock TextWrapping="Wrap" Text="{TemplateBinding Content}"></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" Text="{TemplateBinding Content}"/>
                                 </ContentPresenter.Content>
                             </ContentPresenter>
                         </Label>
@@ -299,10 +294,10 @@
         </Style>
 
         <Style TargetType="{x:Type Button}" x:Key="Raport_btn">
-            <Setter Property="FontSize" Value="15"></Setter>
-            <Setter Property="Content" Value="Отчитаться"></Setter>
-            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Content" Value="Отчитаться"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
 
             <Setter Property="Template">
                 <Setter.Value>
@@ -332,11 +327,11 @@
         <Style TargetType="{x:Type Button}" x:Key="CreateEvent_btn">
 
             <EventSetter Event="ButtonBase.Click" Handler="Btn_CreateEvent_Click"/>
-            <Setter Property="FontSize" Value="13"></Setter>
-            <Setter Property="Content" Value="Добавить событие"></Setter>
-            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
-            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
-            <Setter Property="Margin" Value="0,0,16,0"></Setter>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Content" Value="Добавить событие"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="Margin" Value="0,0,16,0"/>
 
             <Setter Property="Template">
                 <Setter.Value>
@@ -362,32 +357,32 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
-        <Style TargetType="Label" x:Key="CreateOptions_lbl">
-            <Setter Property="FontWeight" Value="Bold"></Setter>
-            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="FontSize" Value="15"></Setter>
-            <Setter Property="Foreground" Value="Black"></Setter>
+
+        <Style TargetType="{x:Type Label}" x:Key="CreateOptions_lbl">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Foreground" Value="Black"/>
         </Style>
-        
-        <Style TargetType="TextBox" x:Key="CreateOptions_tBox">
-            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="TextWrapping" Value="Wrap"></Setter>
-            <Setter Property="MinWidth" Value="500"></Setter>
-            <Setter Property="FontSize" Value="13"></Setter>
+
+        <Style TargetType="{x:Type TextBox}" x:Key="CreateOptions_tBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="MinWidth" Value="500"/>
+            <Setter Property="FontSize" Value="13"/>
         </Style>
 
         <ContextMenu x:Key="_trayMenu">
-            <MenuItem Header="Выход" Click="MenuExitClick" />
+            <MenuItem Header="Выход"  Click="MenuExitClick" />
         </ContextMenu>
 
     </Window.Resources>
 
-    <TabControl Name="MyTabControl" HorizontalAlignment="Center" BorderThickness="0">
-        
-        <TabItem Name="TabMain" Height="0">
+    <TabControl x:Name="MyTabControl" HorizontalAlignment="Center" BorderThickness="0">
+
+        <TabItem x:Name="TabMain" Height="0">
             <Grid Height="566" Width="743" VerticalAlignment="Top" Margin="0,-5.3,0,0">
 
                 <Grid.RowDefinitions>
@@ -424,18 +419,18 @@
 
                     </Grid>
 
-                    <Border BorderBrush="Transparent" BorderThickness="50" Grid.RowSpan="2" MouseLeftButtonDown="Border_MouseLeftButtonDown"></Border>
+                    <Border BorderBrush="Transparent" BorderThickness="50" Grid.RowSpan="2" MouseLeftButtonDown="Border_MouseLeftButtonDown"/>
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="0">
-                        <Button Name="Btn_ArrowLeft" Margin="15,8,7,0" Style="{StaticResource ResourceKey=Arrows_btn}" Content="&lt;" Click="Btn_ArrowLeft_Click"/>
-                        <Label Name="Lbl_MonthAndYear" Margin="0,8,0,0" Style="{StaticResource MonthAndYear_lbl}"/>
-                        <Button Name="Btn_ArrowRight" Margin="7,8,0,0" Style="{StaticResource Arrows_btn}" Content="&gt;" Click="Btn_ArrowRight_Click"/>
+                        <Button x:Name="Btn_ArrowLeft" Margin="15,8,7,0" Style="{StaticResource ResourceKey=Arrows_btn}" Content="&lt;" Click="Btn_ArrowLeft_Click"/>
+                        <Label x:Name="Lbl_MonthAndYear" Margin="0,8,0,0" Style="{StaticResource MonthAndYear_lbl}"/>
+                        <Button x:Name="Btn_ArrowRight" Margin="7,8,0,0" Style="{StaticResource Arrows_btn}" Content="&gt;" Click="Btn_ArrowRight_Click"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
                         <Button x:Name="Btn_Settings" Content="Настройки" Style="{StaticResource Settings_btn}" Click="Btn_Settings_Click"/>
-                        <Label Content="|" Margin="3,0,3,0"></Label>
-                        <Button x:Name="Btn_Reference" Content="Справка" Style="{StaticResource Settings_btn}" Margin="0,0,10,0"></Button>
+                        <Label Content="|" Margin="3,0,3,0"/>
+                        <Button x:Name="Btn_Reference" Content="Справка" Style="{StaticResource Settings_btn}" Margin="0,0,10,0"/>
                         <Button x:Name="Btn_Exit" Click="Btn_Exit_Click" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Width="16" BorderBrush="Red"/>
                     </StackPanel>
                 </Grid>
@@ -461,59 +456,59 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <Button Name="b61" Grid.Row="5" Grid.Column="0" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b62" Grid.Row="5" Grid.Column="1" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b63" Grid.Row="5" Grid.Column="2" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b64" Grid.Row="5" Grid.Column="3" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b65" Grid.Row="5" Grid.Column="4" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b66" Grid.Row="5" Grid.Column="5" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b67" Grid.Row="5" Grid.Column="6" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b61" Grid.Row="5" Grid.Column="0" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b62" Grid.Row="5" Grid.Column="1" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b63" Grid.Row="5" Grid.Column="2" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b64" Grid.Row="5" Grid.Column="3" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b65" Grid.Row="5" Grid.Column="4" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b66" Grid.Row="5" Grid.Column="5" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b67" Grid.Row="5" Grid.Column="6" Style="{StaticResource Day_btn}"/>
 
-                    <Button Name="b51" Grid.Row="4" Grid.Column="0" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b52" Grid.Row="4" Grid.Column="1" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b53" Grid.Row="4" Grid.Column="2" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b54" Grid.Row="4" Grid.Column="3" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b55" Grid.Row="4" Grid.Column="4" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b56" Grid.Row="4" Grid.Column="5" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b57" Grid.Row="4" Grid.Column="6" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b51" Grid.Row="4" Grid.Column="0" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b52" Grid.Row="4" Grid.Column="1" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b53" Grid.Row="4" Grid.Column="2" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b54" Grid.Row="4" Grid.Column="3" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b55" Grid.Row="4" Grid.Column="4" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b56" Grid.Row="4" Grid.Column="5" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b57" Grid.Row="4" Grid.Column="6" Style="{StaticResource Day_btn}"/>
 
-                    <Button Name="b41" Grid.Row="3" Grid.Column="0" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b42" Grid.Row="3" Grid.Column="1" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b43" Grid.Row="3" Grid.Column="2" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b44" Grid.Row="3" Grid.Column="3" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b45" Grid.Row="3" Grid.Column="4" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b46" Grid.Row="3" Grid.Column="5" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b47" Grid.Row="3" Grid.Column="6" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b41" Grid.Row="3" Grid.Column="0" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b42" Grid.Row="3" Grid.Column="1" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b43" Grid.Row="3" Grid.Column="2" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b44" Grid.Row="3" Grid.Column="3" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b45" Grid.Row="3" Grid.Column="4" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b46" Grid.Row="3" Grid.Column="5" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b47" Grid.Row="3" Grid.Column="6" Style="{StaticResource Day_btn}"/>
 
-                    <Button Name="b31" Grid.Row="2" Grid.Column="0" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b32" Grid.Row="2" Grid.Column="1" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b33" Grid.Row="2" Grid.Column="2" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b34" Grid.Row="2" Grid.Column="3" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b35" Grid.Row="2" Grid.Column="4" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b36" Grid.Row="2" Grid.Column="5" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b37" Grid.Row="2" Grid.Column="6" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b31" Grid.Row="2" Grid.Column="0" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b32" Grid.Row="2" Grid.Column="1" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b33" Grid.Row="2" Grid.Column="2" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b34" Grid.Row="2" Grid.Column="3" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b35" Grid.Row="2" Grid.Column="4" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b36" Grid.Row="2" Grid.Column="5" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b37" Grid.Row="2" Grid.Column="6" Style="{StaticResource Day_btn}"/>
 
-                    <Button Name="b21" Grid.Row="1" Grid.Column="0" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b22" Grid.Row="1" Grid.Column="1" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b23" Grid.Row="1" Grid.Column="2" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b24" Grid.Row="1" Grid.Column="3" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b25" Grid.Row="1" Grid.Column="4" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b26" Grid.Row="1" Grid.Column="5" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b27" Grid.Row="1" Grid.Column="6" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b21" Grid.Row="1" Grid.Column="0" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b22" Grid.Row="1" Grid.Column="1" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b23" Grid.Row="1" Grid.Column="2" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b24" Grid.Row="1" Grid.Column="3" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b25" Grid.Row="1" Grid.Column="4" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b26" Grid.Row="1" Grid.Column="5" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b27" Grid.Row="1" Grid.Column="6" Style="{StaticResource Day_btn}"/>
 
-                    <Button Name="b11" Grid.Row="0" Grid.Column="0" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b12" Grid.Row="0" Grid.Column="1" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b13" Grid.Row="0" Grid.Column="2" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b14" Grid.Row="0" Grid.Column="3" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b15" Grid.Row="0" Grid.Column="4" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b16" Grid.Row="0" Grid.Column="5" Style="{StaticResource Day_btn}"/>
-                    <Button Name="b17" Grid.Row="0" Grid.Column="6" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b11" Grid.Row="0" Grid.Column="0" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b12" Grid.Row="0" Grid.Column="1" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b13" Grid.Row="0" Grid.Column="2" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b14" Grid.Row="0" Grid.Column="3" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b15" Grid.Row="0" Grid.Column="4" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b16" Grid.Row="0" Grid.Column="5" Style="{StaticResource Day_btn}"/>
+                    <Button x:Name="b17" Grid.Row="0" Grid.Column="6" Style="{StaticResource Day_btn}"/>
 
                 </Grid>
             </Grid>
         </TabItem>
 
-        <TabItem Name="TabDoing" Height="0">
+        <TabItem x:Name="TabDoing" Height="0">
             <Grid Width="745" Height="566" Margin="0,-5.3,0,0">
 
                 <Grid.RowDefinitions>
@@ -521,36 +516,36 @@
                     <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
 
-                <Border BorderBrush="Transparent" Opacity="0.15" BorderThickness="50" Grid.Row="0" MouseLeftButtonDown="Border_MouseLeftButtonDown"></Border>
+                <Border BorderBrush="Transparent" Opacity="0.15" BorderThickness="50" Grid.Row="0" MouseLeftButtonDown="Border_MouseLeftButtonDown"/>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="0">
                     <Label x:Name="Lbl_Title" Content="Январь, 1" Style="{StaticResource Title_lbl}" Margin="15,3,0,0"/>
                     <Button Content="∧" Style="{StaticResource Arrows_btn}" Click="Btn_ToMainTab_Click" Margin="7,8,0,0"/>
                 </StackPanel>
 
-                <Button Name="Btn_CreateEvent" Style="{StaticResource CreateEvent_btn}"></Button>
-                
+                <Button x:Name="Btn_CreateEvent" Style="{StaticResource CreateEvent_btn}"/>
+
                 <StackPanel Margin="0,0,2,0" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
                     <Button  Content="Настройки" Style="{StaticResource Settings_btn}" Click="Btn_Settings_Click"/>
-                    <Label Content="|" Margin="3,0,3,0"></Label>
-                    <Button  Content="Справка" Style="{StaticResource Settings_btn}" Margin="0,0,10,0"></Button>
+                    <Label Content="|" Margin="3,0,3,0"/>
+                    <Button  Content="Справка" Style="{StaticResource Settings_btn}" Margin="0,0,10,0"/>
                     <Button  Click="Btn_Exit_Click" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Width="16" BorderBrush="Red"/>
                 </StackPanel>
-                
+
                 <ScrollViewer Grid.Row="1" Margin="5" Focusable="False">
-                    <StackPanel Name="MyStack" HorizontalAlignment="Left"/>
+                    <StackPanel x:Name="MyStack" HorizontalAlignment="Left"/>
                 </ScrollViewer>
             </Grid>
 
         </TabItem>
 
-        <TabItem Name="TabSettings" Height="0">
+        <TabItem x:Name="TabSettings" Height="0">
             <Grid  Width="745" Height="566" Margin="0,-5.3,0,0">
-                <Button Content="Back" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Btn_ToMainTab_Click"></Button>
+                <Button Content="Back" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Btn_ToMainTab_Click"/>
             </Grid>
         </TabItem>
-        
-        <TabItem Name="TabAddEvent" Height="0">
+
+        <TabItem x:Name="TabAddEvent" Height="0">
             <Grid  Width="745" Height="566" Margin="0,-5.3,0,0">
 
                 <Grid.RowDefinitions>
@@ -558,12 +553,12 @@
                     <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
 
-                <Border BorderBrush="Transparent" BorderThickness="50" Grid.Row="0" MouseLeftButtonDown="Border_MouseLeftButtonDown"></Border>
+                <Border BorderBrush="Transparent" BorderThickness="50" Grid.Row="0" MouseLeftButtonDown="Border_MouseLeftButtonDown"/>
 
                 <StackPanel Margin="0,0,2,0" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
                     <Button  Content="Настройки" Style="{StaticResource Settings_btn}" Click="Btn_Settings_Click"/>
-                    <Label Content="|" Margin="3,0,3,0"></Label>
-                    <Button  Content="Справка" Style="{StaticResource Settings_btn}" Margin="0,0,10,0"></Button>
+                    <Label Content="|" Margin="3,0,3,0"/>
+                    <Button  Content="Справка" Style="{StaticResource Settings_btn}" Margin="0,0,10,0"/>
                     <Button  Click="Btn_Exit_Click" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Width="16" BorderBrush="Red"/>
                 </StackPanel>
 
@@ -571,47 +566,60 @@
                     <Label x:Name="Lbl_CreateEvent" Content="Создание события" Style="{StaticResource Title_lbl}" Margin="15,3,0,0"/>
                     <Button Content="∧" Style="{StaticResource Arrows_btn}" Click="Btn_ToMainTab_Click" Margin="7,8,0,0"/>
                 </StackPanel>
-                
-                <ScrollViewer Grid.Row="1" Focusable="False" Margin="2">
-                    <StackPanel Grid.Row="1">
-                        <StackPanel Orientation="Horizontal">
-                            <Label Style="{StaticResource CreateOptions_lbl}" >Время начала:</Label>
-                            <!--<TimePicker Name="TP_TimeStartEvent" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"></TimePicker>-->
-                        </StackPanel>
-                        <Label Style="{StaticResource CreateOptions_lbl}">Текст события:</Label>
-                        <TextBox Name="Tb_TextEvent" Style="{StaticResource CreateOptions_tBox}"></TextBox>
-                        <Label Style="{StaticResource CreateOptions_lbl}">Место проведения:</Label>
-                        <TextBox Name="Tb_PlaceEvent" Style="{StaticResource CreateOptions_tBox}"></TextBox>
 
-                        <Label Style="{StaticResource CreateOptions_lbl}">Приоритет:</Label>
-                        <StackPanel Orientation="Horizontal">
-                            <CheckBox Name="Cb_MinPriority" Margin="5">Минимальный</CheckBox>
-                            <CheckBox Name="Cb_MidPriority" Margin="5">Средний</CheckBox>
-                            <CheckBox Name="Cb_MaxPriority" Margin="5">Максимальный</CheckBox>
-                        </StackPanel>
-                        <Label Style="{StaticResource CreateOptions_lbl}">Участники:</Label>
-
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-
-                            <ListBox Name="LB_SelectedUsers"  Grid.Column="0">Выбранные пользователи</ListBox>
-                            <ListBox Name="LB_AllUsers" Grid.Column="1">Все пользователи</ListBox>
-                        </Grid>
-
-
-
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Name="Btn_AddEvent" Click="Btn_AddEvent_Click" Content="Создать"></Button>
-
+                <StackPanel Grid.Row="1">
+                    <StackPanel x:Name="SP_ForTimePicker" Orientation="Horizontal">
+                        <Label Style="{StaticResource CreateOptions_lbl}" Content="Время начала:" />
                     </StackPanel>
-                </ScrollViewer>
+                    <Label Style="{StaticResource CreateOptions_lbl}" Content="Текст события:"/>
+                    <TextBox x:Name="Tb_TextEvent" Style="{StaticResource CreateOptions_tBox}"/>
+                    <Label Style="{StaticResource CreateOptions_lbl}" Content="Место проведения:"/>
+                    <TextBox x:Name="Tb_PlaceEvent" Style="{StaticResource CreateOptions_tBox}"/>
+
+                    <Label Style="{StaticResource CreateOptions_lbl}" Content="Приоритет:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox x:Name="Cb_MinPriority" Margin="5" Content="Минимальный"/>
+                        <CheckBox x:Name="Cb_MidPriority" Margin="5" Content="Средний"/>
+                        <CheckBox x:Name="Cb_MaxPriority" Margin="5" Content="Максимальный"/>
+                    </StackPanel>
+                    <Label Style="{StaticResource CreateOptions_lbl}" Content="Участники:"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ListBox x:Name="LB_SelectedUsers"  Grid.Column="0" MaxHeight="225" MouseDoubleClick="LB_SelectedUsers_MouseDoubleClick">
+                            <System:String>Выбранные пользователи:</System:String>
+                        </ListBox>
+                        <ScrollViewer Grid.Row="1" Grid.Column="1" Focusable="False" Margin="2" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                            <ListBox x:Name="LB_AllUsers" Grid.Column="1" MaxHeight="225" MouseDoubleClick="LB_AllUsers_MouseDoubleClick">
+                                <System:String>Все пользователи:</System:String>                                
+                                <System:String>Курилов Андрей</System:String>
+                                <System:String>Мешков Андрей</System:String>
+                                <System:String>Васильев Олег</System:String>
+                                <System:String>Концевой Максим</System:String>
+                                <System:String>Иванов Иван</System:String>
+                                <System:String>Дмитрий Ларин</System:String>
+                                <System:String>Илья Меддисон</System:String>
+                                <System:String>Тарас Каленка</System:String>
+                                <System:String>Петро Паркиненко</System:String>
+                                <System:String>Аллах</System:String>
+                                <System:String>Твоя Мама</System:String>
+                                <System:String>МК</System:String>
+                                <System:String>Иисус</System:String>
+                                <System:String>Совет</System:String>
+                            </ListBox>
+                        </ScrollViewer>
+                    </Grid>
+                    <Button VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="Btn_AddEvent" Click="Btn_AddEvent_Click" Content="Создать"/>
+                </StackPanel>
                 <Expander Header="Expander" HorizontalAlignment="Left" Margin="-141,-54,0,0" VerticalAlignment="Top">
                     <Grid Background="#FFE5E5E5"/>
                 </Expander>
             </Grid>
-                
+
         </TabItem>
 
     </TabControl>

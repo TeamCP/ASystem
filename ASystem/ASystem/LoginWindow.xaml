@@ -1,0 +1,30 @@
+﻿<Window x:Class="ASystem.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Register" Height="230" Width="350" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" BorderThickness="1" BorderBrush="Gray" Icon="myIcon.ico" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Border BorderBrush="Transparent" BorderThickness="50"  MouseLeftButtonDown="Border_MouseLeftButtonDown"/>
+        <StackPanel>
+            <Label HorizontalAlignment="Left">Вход в Awareness System</Label>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Label>Имя аккаунта</Label>
+                <TextBox x:Name="Tb_Login_LW_" MinWidth="150"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Label Margin="34,0,0,0">Пароль</Label>
+                <TextBox x:Name="Tb_Pass_LW_" MinWidth="150"></TextBox>
+            </StackPanel>
+            <CheckBox Margin="54,0,0,0" HorizontalAlignment="Center">Запомнить пароль</CheckBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="87,7,0,0">
+                <Button Name="btb_Enter" Margin="5" MinWidth="70" Click="btb_Enter_Click">Войти</Button>
+                <Button Name="btb_Сancel" Margin="5" MinWidth="70" Click="btb_Сancel_Click">Отмена</Button>
+            </StackPanel>
+
+            <Line X1="25" X2="325" Y1="10" Y2="10" Stroke="Black" StrokeThickness="1"></Line>
+            <Button HorizontalAlignment="Center" Margin="15">Создать новый аккаунт</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

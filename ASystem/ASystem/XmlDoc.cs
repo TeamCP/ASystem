@@ -60,6 +60,34 @@ namespace ASystem
             }
         }
 
+        public static bool ReadConfig()
+        {
+            XmlDocument doc = new XmlDocument();
+
+            string path = "config.ini";
+            doc.Load(path);
+            int isRegister = 0;
+            bool output = false;
+
+            foreach (XmlElement el in doc.GetElementsByTagName("StartProgramm"))
+            {
+                isRegister = Convert.ToInt32(el.Attributes["isRegister"].Value);
+            }
+            switch(isRegister)
+            {
+                case 1:
+                    output = true;
+                    break;
+                case -1:
+                    output = false;
+                    break;
+                case 0:
+                    output = false;
+                    break;
+            }
+            return output;
+        }
+
         public string ReadXmlFile(DateTime date, int numberEvent)
         {
             string line = "";

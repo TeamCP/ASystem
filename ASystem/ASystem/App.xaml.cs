@@ -13,5 +13,23 @@ namespace ASystem
     /// </summary>
     public partial class App : Application
     {
+       public App()
+        {
+        }
+
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            bool cheak = XmlDoc.ReadConfig();
+
+            if(cheak)
+            {
+                StartupUri = new Uri("MainWindow.xaml", UriKind.Relative);
+            }
+            else
+            {
+                StartupUri = new Uri("LoginWindow.xaml", UriKind.Relative);
+            }
+            
+        }
     }
 }

@@ -21,8 +21,11 @@ namespace ASystem
         static Button[,] arrButton;
         static bool _buttonChecker;
         static int _indexButton;
+        static TimePicker _myTimePicker;
+
         public MainWindow()
         {
+
             InitializeComponent();
 
             _date = DateTime.Now;
@@ -235,33 +238,59 @@ namespace ASystem
 
         private void Btn_CreateEvent_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                SP_ForTimePicker.Children.RemoveAt(1);
+            }
+            catch (ArgumentOutOfRangeException) { }
+         
+            _myTimePicker = new TimePicker();
+            SP_ForTimePicker.Children.Add(_myTimePicker);
             MyTabControl.SelectedIndex = 3;
+            ///////////////////
+            LB_AllUsers.Items.Clear();
+            LB_SelectedUsers.Items.Clear();
+
+            DB.GetUserList();
+
+            foreach (User us in DB.Users)
+            {
+                LB_AllUsers.Items.Add(us);
+            }
         }      
 
         private void Btn_AddEvent_Click(object sender, RoutedEventArgs e)
         {
+
             int importance = 0;
             if (Cb_MinPriority.IsChecked == true) importance = 1;
             if (Cb_MidPriority.IsChecked == true) importance = 2;
             if (Cb_MaxPriority.IsChecked == true) importance = 3;
 
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>TIME PICKER THERE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-            // Сюда нужно читать данные из таймпикера в поля для времени.
-            int hour = 12;
-            int minute = 0;
+            int hour = _myTimePicker.SelectedHour;
+            int minute = _myTimePicker.SelectedMinute;
 
             DateTime DT = new DateTime(_date.Year, _date.Month, _date.Day, hour, minute, 0);
 
-            // Тут будет метод возвращающий массив с ID выбранных в листбоксе юзеров. 
-            int[] id_array = { 1, 2 };
-
-            foreach (int id in id_array)
+            foreach (User us in LB_SelectedUsers.Items)
             {
-                if (DB.Exception_number == 0) DB.AddNewEvent(id, Tb_TextEvent.Text, Tb_PlaceEvent.Text, DT, importance);                
+                if (DB.Exception_number == 0) DB.AddNewEvent(us._id, Tb_TextEvent.Text, Tb_PlaceEvent.Text, DT, importance);                
             }
 
-            if (DB.Exception_number == 0) MessageBox.Show(String.Format("Событиt успешно добавлено."));           
+            if (DB.Exception_number == 0) MessageBox.Show(String.Format("Событие успешно добавлено."));           
 
+        }
+
+        private void LB_AllUsers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            LB_SelectedUsers.Items.Add(LB_AllUsers.SelectedItem);
+            LB_AllUsers.Items.Remove(LB_AllUsers.SelectedItem);
+        }
+
+        private void LB_SelectedUsers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            LB_AllUsers.Items.Add(LB_SelectedUsers.SelectedItem);
+            LB_SelectedUsers.Items.Remove(LB_SelectedUsers.SelectedItem);
         }
     }
 }
